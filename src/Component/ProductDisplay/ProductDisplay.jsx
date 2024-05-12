@@ -90,26 +90,26 @@ const ProductDisplay = ({ product, id }) => {
         <div className="productdisplay-left">
           <div className="productdisplay-imglist">
             <img
-              src={"http://localhost:8000/media/" + product.productImage}
+              src={"https://clothy-backend-app.vercel.app/media/" + product.productImage}
               alt={product.name}
             />
             <img
-              src={"http://localhost:8000/media/" + product.productImage}
+              src={"https://clothy-backend-app.vercel.app/media/" + product.productImage}
               alt={product.name}
             />
             <img
-              src={"http://localhost:8000/media/" + product.productImage}
+              src={"https://clothy-backend-app.vercel.app/media/" + product.productImage}
               alt={product.name}
             />
             <img
-              src={"http://localhost:8000/media/" + product.productImage}
+              src={"https://clothy-backend-app.vercel.app/media/" + product.productImage}
               alt={product.name}
             />
           </div>
           <div className="productdisplay-img">
             <img
               className="productdisplay-main-img"
-              src={"http://localhost:8000/media/" + product.productImage}
+              src={"https://clothy-backend-app.vercel.app/media/" + product.productImage}
               alt=""
             />
           </div>
