@@ -77,7 +77,7 @@ function AllOrdersItem({ orders, currPage, itemsperPage }) {
           return (
             <div  key={i}>
               <div className={theme==='dark-theme'?"allorderitems-format allorderitems-format-main dark":"allorderitems-format allorderitems-format-main"}>
-                <img src={"http://localhost:8000/media/" + item.productImage} alt="" className='carticon-product-icon' />
+                <img src={"https://clothy-backend-app.vercel.app/media/media/" + item.productImage} alt="" className='carticon-product-icon' />
                 <p>{item.productName}</p>
                 <p>{item.username}</p>
                 <p> {item.orderDate}</p>
