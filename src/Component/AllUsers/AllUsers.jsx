@@ -77,7 +77,7 @@ function AllUsers({ users, currPage, itemsperPage }) {
             {item.role.role==="user"&&
             (<div  key={i}>
               <div className={theme==='dark-theme'?"allusers-format allusers-format-main dark":"allusers-format allusers-format-main"}>
-                <img src={item.image?"http://localhost:8000/media/" + item.image:avatar} alt="alternative" className='user-profile-icon' />
+                <img src={item.image?"https://clothy-backend-app.vercel.app/media/media/" + item.image:avatar} alt="alternative" className='user-profile-icon' />
                 <p className='allusers-p'>{item.username}</p>
                 <input type="text" className={theme==='dark-theme'?"all-user-email dark":"all-user-email"} value={item.email} />
                 <p > {formatDateOnly(item.lastLogin)}</p>
