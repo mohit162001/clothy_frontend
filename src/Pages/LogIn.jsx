@@ -19,13 +19,11 @@ export const Login = () => {
     onCompleted(data) {
       handleSnackbarOpen("", "Log in successfully");
       storeData(data.userLogin);
-      setTimeout(() => {
-        if (isAdminUser()) {
+       if (isAdminUser()) {
           navigate("/admin");
         } else {
           navigate("/");
         }
-      }, 1000);
     },
     onError(error) {
       if (error.message.includes("Invalid")) {
