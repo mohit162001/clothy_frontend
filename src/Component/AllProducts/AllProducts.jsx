@@ -82,7 +82,7 @@ function AllProducts({ products, currPage, itemsperPage }) {
           return (
             <div  key={i}>
               <div className={theme==='dark-theme'?"allproduct-format allproduct-format-main dark":"allproduct-format allproduct-format-main"}>
-                <Link onClick={()=>setMenu('')} to={'/product/'+item.node.id}><img src={"http://localhost:8000/media/" + item.node.image} alt="alternative" className='carticon-product-icon' /></Link>
+                <Link onClick={()=>setMenu('')} to={'/product/'+item.node.id}><img src={"https://clothy-backend-app.vercel.app/media/" + item.node.image} alt="alternative" className='carticon-product-icon' /></Link>
                 <p className='allproduct-p'>{item.node.name}</p>
                 <p className='allproduct-p'>₹{item.node.price}</p>
                 {/* <p> {item.node.desc}</p> */}
