@@ -78,7 +78,7 @@ function OrdersItem({ orders, currPage, itemsperPage,userId }) {
           return (
             <div  key={i}>
               <div className={theme==="dark-theme"?"orderitems-format orderitems-format-main dark":"orderitems-format orderitems-format-main"}>
-                <img src={"http://localhost:8000/media/" + item.productImage} alt="" className='carticon-product-icon' />
+                <img src={"https://clothy-backend-app.vercel.app/media/media/" + item.productImage} alt="" className='carticon-product-icon' />
                 <p>{item.productName}</p>
                 <p> {item.orderDate}</p>
                 <button className='orderitems-quantity'>{item.quantity}</button>
