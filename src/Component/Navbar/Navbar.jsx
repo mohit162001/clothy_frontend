@@ -85,7 +85,7 @@ function Navbar() {
             <div className='nav-avatar'>
               <Link to='user'>
                 <img onClick={()=>{setMenu('user')}} className={menu==='user'?'nav-avatar-img-active':'nav-avatar-img'} src={isAdminUser()?admin_image1:
-                  (userData && userData.userDetails.image?`http://localhost:8000/media/${userData.userDetails.image}`
+                  (userData && userData.userDetails.image?`https://clothy-backend-app.vercel.app/media/${userData.userDetails.image}`
                   :avatar )} alt="alternative" />
               </Link>
               
