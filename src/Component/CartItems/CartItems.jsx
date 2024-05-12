@@ -150,7 +150,7 @@ const CartItems = ({products,refetch,userId}) => {
         {products && products.userCart.map((item)=>{
                 return <div key={item.id}>
                             <div className={theme==="dark-theme"?"cartitems-format cartitems-format-main dark":"cartitems-format cartitems-format-main"}>
-                                <img src={"https://clothy-backend-app.vercel.app/media/media/"+item.productImage} alt="" className='carticon-product-icon' />
+                                <img src={"https://clothy-backend-app.vercel.app/media/"+item.productImage} alt="" className='carticon-product-icon' />
                                 <p>{item.productName}</p>
                                 <p> ₹{item.productPrice}</p>
                                 <div className='cartitems-quantity-container'>
