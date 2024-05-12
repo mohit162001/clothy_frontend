@@ -20,7 +20,7 @@ function UserDetails({username,email,address,userId,image}) {
         <>
         <h3 className={theme==="dark-theme"?"userprofile-h3-dark":'userprofile-h3'}>{isAdminUser()?"Admin Profile":"User Profile"}</h3>
         <div className="avatar-img">
-            {image?<img className='avatar' alt="alterative" src={"https://clothy-backend-app.vercel.app/media/media/"+image}/>:<img src={isAdminUser()?admin_image1: avatar} alt="alterative" className='avatar'/>}
+            {image?<img className='avatar' alt="alterative" src={"https://clothy-backend-app.vercel.app/media/"+image}/>:<img src={isAdminUser()?admin_image1: avatar} alt="alterative" className='avatar'/>}
         </div>
         <div className="userprofile-container">
             
