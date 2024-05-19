@@ -6,7 +6,7 @@ function Model({handleDelete,handleModel,heading,forProductEdit,img}) {
         <div className="model-container">
             {img?
             <div className='product-img-container'>
-            <img src={`http://localhost:8000/media/${img}`} alt="" />
+            <img src={`https://clothy-backend-app.vercel.app/media/${img}`} alt="" />
             <div className="model-img-action">
                 <button className='model-action-close' onClick={handleModel}>close</button>
             </div>
