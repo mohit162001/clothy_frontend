@@ -206,7 +206,7 @@ function AddProductForm({ productData, productId }) {
               
               />
               
-             {productData &&  <img onClick={handleModel} className="product-img-view" src={"http://localhost:8000/media/"+productData.productImage} alt="" />}
+             {productData &&  <img onClick={handleModel} className="product-img-view" src={"https://clothy-backend-app.vercel.app/media/"+productData.productImage} alt="" />}
             </div>
             <div className="adminproduct-action">
               <Link to="/admin/allproducts">
