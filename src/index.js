@@ -9,7 +9,7 @@ import { getAuthToken } from './helper';
 import { setContext } from '@apollo/client/link/context';
 
 const httpLink = createHttpLink({
-  uri: process.env.CLOTHY_BACKEND_URL,
+  uri: 'https://clothy-backend-app.vercel.app/graphql/',
 });
 
 
